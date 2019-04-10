@@ -26,12 +26,31 @@
     >
       <svgicon icon="skype" width="32" height="32" color="#00AFF0"></svgicon>
     </a>
+    <a
+      href="https://github.com/panay"
+      target="_blank"
+      rel="nofollow noopener"
+      title="Look at my code"
+      class="socials__item"
+    >
+      <svgicon icon="github" width="32" height="32" color="#181717"></svgicon>
+    </a>
+    <a
+      href="mailto:panayka91@gmail.com"
+      rel="nofollow noopener"
+      title="Send me a letter"
+      class="socials__item"
+    >
+      <svgicon icon="gmail" width="32" height="32" color="#D14836"></svgicon>
+    </a>
   </div>
 </template>
 <script>
 import '~/assets/compiled-icons/linkedin'
 import '~/assets/compiled-icons/telegram'
 import '~/assets/compiled-icons/skype'
+import '~/assets/compiled-icons/github'
+import '~/assets/compiled-icons/gmail'
 
 export default {
   name: 'Socials'
