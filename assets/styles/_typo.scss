@@ -13,7 +13,7 @@ body {
 ** HEADINGS
 ***************************************/
 h1 {
-  font: rem(24) $font-family-heading;
+  font: rem(36) $font-family-heading;
   line-height: 1;
   font-weight: 900;
   margin: 0 0 20px 0;
@@ -28,6 +28,13 @@ h2 {
 
 h3 {
   font: $fz-medium $font-family-heading;
+  line-height: 1;
+  font-weight: 900;
+  margin: 0 0 20px 0;
+}
+
+h4, h5, h6 {
+  font: $fz-default $font-family-heading;
   line-height: 1;
   font-weight: 900;
   margin: 0 0 20px 0;

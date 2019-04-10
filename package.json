@@ -1,11 +1,11 @@
 {
   "name": "personal-website",
   "version": "1.0.0",
-  "description": "My personal website",
+  "description": "The personal website of a senior front-end developer.",
   "author": "Sergey Panay",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --fix",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
