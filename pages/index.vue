@@ -1,5 +1,6 @@
 <template>
   <div class="mainpage">
+    <Header />
     <section class="mainpage__headings">
       <h1>Sergey Panay</h1>
       <h2>front-end developer</h2>
@@ -10,10 +11,11 @@
 
 <script>
 import Socials from '../components/Socials/Socials'
+import Header from '../components/Header/Header'
 
 export default {
   layout: 'mainpage',
-  components: { Socials }
+  components: { Socials, Header }
 }
 </script>
 
@@ -29,11 +31,8 @@ export default {
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
 
   &__headings {
-    position: relative;
-    z-index: 2;
     h1 {
       font-size: rem(110);
     }
