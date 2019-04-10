@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <Header :inner-page="true" />
     <nuxt />
   </div>
 </template>

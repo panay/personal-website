@@ -1,6 +1,6 @@
 <template>
   <div class="mainpage">
-    <Header />
+    <Header class="mainpage__header" />
     <section class="mainpage__headings">
       <h1>Sergey Panay</h1>
       <h2>front-end developer</h2>
@@ -22,6 +22,7 @@ export default {
 <style lang="scss" scope>
 @import '~assets/styles/vars';
 @import '~assets/styles/functions';
+@import '~assets/styles/mq';
 
 .mainpage {
   height: 100vh;
@@ -38,6 +39,12 @@ export default {
     }
     h2 {
       font-size: rem(48);
+    }
+  }
+
+  @include mq($until: tablet) {
+    &__header {
+      display: none;
     }
   }
 }
