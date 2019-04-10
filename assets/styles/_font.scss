@@ -1,0 +1,23 @@
+$path: '~assets/fonts/';
+
+@font-face {
+  font-family: 'Catamaran';
+  src: local('Catamaran Black'), local('Catamaran-Black'),
+    url($path+'Catamaran-Black.woff2') format('woff2'),
+    url($path+'Catamaran-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Regular'), local('Roboto-Regular'),
+    url($path+'Roboto-Regular.woff2') format('woff2'),
+    url($path+'Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: fallback;
+}
