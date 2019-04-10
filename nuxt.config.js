@@ -50,6 +50,21 @@ export default {
    ** Build configuration
    */
   build: {
+    babel: {
+      presets: ['@babel/preset-env'],
+      plugins: [
+        '@babel/transform-runtime',
+        '@babel/plugin-syntax-dynamic-import'
+      ]
+    },
+    postcss: {
+      preset: {
+        // Change the postcss-preset-env settings
+        autoprefixer: {
+          browsers: ['last 2 versions', 'ie >= 9']
+        }
+      }
+    },
     /*
      ** You can extend webpack config here
      */
