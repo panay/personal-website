@@ -10,6 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "generate-icons": "vsvg -s ./assets/svg -t ./assets/compiled-icons",
     "precommit": "npm run lint"
   },
   "dependencies": {
