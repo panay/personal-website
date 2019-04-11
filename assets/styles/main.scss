@@ -11,3 +11,9 @@
 body, html {
   background-color: $c-bg;
 }
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 30px;
+}

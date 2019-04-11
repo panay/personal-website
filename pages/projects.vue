@@ -1,9 +1,17 @@
 <template>
-  <section></section>
+  <section class="container">
+    <h1>My works</h1>
+  </section>
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'My works — Sergey Panay'
+    }
+  }
+}
 </script>
 
 <style lang="scss" scope>
