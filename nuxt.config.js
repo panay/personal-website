@@ -13,7 +13,27 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: '/favs/favicon-16x16.png?v=JykkAYvaXn'
+      },
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '/favs/favicon-32x32.png?v=JykkAYvaXn'
+      },
+      {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: '/favs/apple-touch-icon.png?v=JykkAYvaXn'
+      },
+      { rel: 'manifest', href: '/favs/site.webmanifest?v=JykkAYvaXn' },
+      { rel: 'shortcut icon', href: '/favs/favicon.ico?v=JykkAYvaXn' }
+    ]
   },
 
   /*
