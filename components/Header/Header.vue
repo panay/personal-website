@@ -103,7 +103,7 @@ header {
 
     &.inner {
       .inner-logo {
-        margin-top: 17px;
+        margin: 17px 20px 0;
       }
       nav {
         display: none;
