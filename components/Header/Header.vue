@@ -3,8 +3,7 @@
     <div v-if="innerPage" class="inner-logo">
       <nuxt-link to="/" title="Return to homepage">Sergey Panay</nuxt-link>
     </div>
-    <div class="mobview-icon" @click="toggleSideMenu"></div>
-    <nav :class="{ opened: opened }">
+    <nav>
       <nuxt-link to="/about" title="Information about me">
         <span>Who am I?</span>
       </nuxt-link>
@@ -25,16 +24,6 @@ export default {
   name: 'Header',
   props: {
     innerPage: Boolean
-  },
-  data() {
-    return {
-      opened: false
-    }
-  },
-  methods: {
-    toggleSideMenu() {
-      this.opened = !this.opened
-    }
   }
 }
 </script>
@@ -109,59 +98,15 @@ header {
     }
   }
 
-  .mobview-icon {
-    display: none;
-  }
-
   @include mq($until: tablet) {
-    .mobview-icon {
-      display: block;
-      position: relative;
-      z-index: 100;
-      cursor: pointer;
-      text-align: right;
-      margin: 14px 20px 0 0;
-    }
-
-    nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      transition: transform 0.25s ease-in-out;
-      will-change: transform;
-      transform: translate(100%, 0);
-      width: 300px;
-      height: 100%;
-      margin: 0;
-      padding-top: 30px;
-      z-index: 99;
-      box-shadow: 0 0 8px #aaa;
-      background: $c-bg;
-      &.opened {
-        transform: translate(0, 0);
-      }
-
-      > a {
-        display: block;
-        padding: 10px;
-        margin: 0;
-        border-bottom: 1px solid darken($c-bg, 7%);
-        &:after {
-          content: none;
-        }
-      }
-    }
+    display: none;
 
     &.inner {
-      nav {
-        margin-top: 0;
-      }
-      .mobview-icon {
-        margin: 0;
-        margin-right: 20px;
-      }
       .inner-logo {
-        margin: 0 20px;
+        margin-top: 17px;
+      }
+      nav {
+        display: none;
       }
     }
   }

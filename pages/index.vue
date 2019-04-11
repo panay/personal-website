@@ -1,6 +1,6 @@
 <template>
   <div class="mainpage">
-    <Header class="mainpage__header" />
+    <Header />
     <section class="mainpage__headings">
       <h1>Sergey Panay</h1>
       <h2>front-end developer</h2>
@@ -43,8 +43,13 @@ export default {
   }
 
   @include mq($until: tablet) {
-    &__header {
-      display: none;
+    &__headings {
+      h1 {
+        font-size: rem(100);
+      }
+      h2 {
+        font-size: rem(38);
+      }
     }
   }
 }

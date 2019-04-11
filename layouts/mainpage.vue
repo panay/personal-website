@@ -1,24 +1,16 @@
 <template>
   <div>
-    <Header class="mainpage-mob-header" />
     <nuxt />
+    <MobMenu />
   </div>
 </template>
 
 <script>
-import Header from '../components/Header/Header'
+import MobMenu from '../components/MobMenu/MobMenu'
 
 export default {
-  components: { Header }
+  components: { MobMenu }
 }
 </script>
 
-<style lang="scss" scoped>
-@import '~assets/styles/mq';
-
-@include mq($from: tablet) {
-  .mainpage-mob-header {
-    display: none;
-  }
-}
-</style>
+<style lang="scss" scoped></style>
