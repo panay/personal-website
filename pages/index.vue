@@ -44,11 +44,12 @@ export default {
 
   @include mq($until: tablet) {
     &__headings {
+      padding: 10px;
       h1 {
-        font-size: rem(100);
+        font-size: rem(80);
       }
       h2 {
-        font-size: rem(38);
+        font-size: rem(28);
       }
     }
   }
