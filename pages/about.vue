@@ -7,36 +7,58 @@
       </h1>
       <ul class="facts">
         <li class="facts__item">
-          <h2 class="facts__item--large-text">27</h2>
+          <h3>27</h3>
           <div>years old</div>
         </li>
         <li class="facts__item">
-          <h2>7 years of experience</h2>
+          <h3>7 years of experience</h3>
           <div>in web development</div>
         </li>
         <li class="facts__item">
-          <h2>B1-B2</h2>
+          <h3>B1-B2</h3>
           <div>English level</div>
         </li>
         <li class="facts__item">
-          <h2>Self-motivated</h2>
+          <h3>Self-motivated</h3>
           <div>person</div>
         </li>
         <li class="facts__item">
-          <h2>Love</h2>
+          <h3>Love</h3>
           <div>to work and research</div>
         </li>
       </ul>
-      <h3>Interested in working together? Let’s have a talk.</h3>
+      <h3>
+        Interested in working together?
+        <a
+          href="javascript:;"
+          class="action-link"
+          @click.prevent="openContactsModal"
+          >Let’s have a talk.</a
+        >
+      </h3>
     </section>
+    <ContactsFormModal :opened="opened" @close="opened = false" />
   </div>
 </template>
 
 <script>
+import ContactsFormModal from '../components/ContactsFormModal/ContactsFormModal'
+
 export default {
   head() {
     return {
       title: 'About me — Sergey Panay'
+    }
+  },
+  components: { ContactsFormModal },
+  data() {
+    return {
+      opened: false
+    }
+  },
+  methods: {
+    openContactsModal() {
+      this.opened = true
     }
   }
 }
@@ -48,43 +70,53 @@ export default {
 @import '~assets/styles/mq';
 
 .about-content {
+  max-width: 65%;
+  width: 100%;
   .facts {
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 0 -10px 20px;
+    margin: 30px -10px 20px;
 
     &__item {
-      flex: 1 0 240px;
-      width: 240px;
-      max-width: 240px;
+      flex: 1 0 200px;
+      width: 200px;
+      height: 160px;
       margin: 10px;
-      background-color: $c-primary;
-      box-shadow: 0 0 6px darken($c-bg, 15%);
+      background-color: $c-bg;
+      border: 1px solid darken($c-bg, 15%);
       padding: 20px 15px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
+    }
+  }
 
-      &--large-text {
-        font-size: rem(48);
-      }
-
-      > div {
-        color: $c-bg;
-      }
+  .action-link {
+    color: $c-default;
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 8px 5px;
+    margin-top: 3px;
+    background-color: $c-primary;
+    transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+    will-change: opacity;
+    &:hover,
+    &:active {
+      background-color: transparent;
+      color: $c-primary;
     }
   }
 
   @include mq($until: 540px) {
+    max-width: 100%;
     .facts {
       display: block;
       margin: 0 0 20px;
 
       &__item {
-        max-width: 300px;
         width: 100%;
         margin: 10px 0;
       }

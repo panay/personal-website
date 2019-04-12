@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+mark {
+  background-color: $c-primary;
+  color: $c-default;
+}
+
 body, html {
   background-color: $c-bg;
 }

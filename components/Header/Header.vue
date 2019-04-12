@@ -36,8 +36,6 @@ header {
     margin: 0 20px 30px;
 
     > a {
-      color: $c-link;
-      text-decoration: none;
       border-bottom: 1px dotted $c-link;
       margin: 0 10px 5px;
       position: relative;
@@ -88,9 +86,6 @@ header {
 
       > a {
         color: $c-default;
-        text-decoration: none;
-        transition: color 0.25s ease-in-out;
-        will-change: opacity;
         &:hover {
           color: $c-primary;
         }

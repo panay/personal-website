@@ -39,3 +39,14 @@ h4, h5, h6 {
   font-weight: 900;
   margin: 0 0 20px 0;
 }
+
+a {
+  color: $c-link;
+  text-decoration: none;
+  transition: color 0.25s ease-in-out;
+  will-change: opacity;
+  &:hover,
+  &:active {
+    color: $c-primary;
+  }
+}
