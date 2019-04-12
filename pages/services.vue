@@ -43,7 +43,7 @@
           </div>
           <div class="skillbox-list__item">
             <h3>NodeJS</h3>
-            <p>Study and use for small projects</p>
+            <p>Study and use it for small projects</p>
           </div>
         </div>
       </div>
