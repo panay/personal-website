@@ -1,8 +1,7 @@
 /* eslint-disable */
-require('./cancel-music')
+require('./cancel')
 require('./github')
 require('./gmail')
 require('./linkedin')
 require('./skype')
 require('./telegram')
-require('./x')

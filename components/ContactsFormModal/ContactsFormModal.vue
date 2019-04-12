@@ -5,7 +5,7 @@
       <Socials class="modal__socials" />
       <span class="modal__close-btn" title="Close the window" @click="onClose">
         <svgicon
-          icon="cancel-music"
+          icon="cancel"
           width="18"
           height="18"
           :original="true"
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import '~/assets/compiled-icons/cancel-music'
+import '~/assets/compiled-icons/cancel'
 import Socials from '../Socials/Socials'
 
 export default {
@@ -71,7 +71,7 @@ export default {
       right: 10px;
       cursor: pointer;
       > svg {
-        fill: $c-default;
+        fill: darken($c-bg, 15%);
         transition: fill 0.25s ease-in-out;
         will-change: opacity;
       }

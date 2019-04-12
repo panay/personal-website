@@ -17,15 +17,15 @@
       >
         <span>Who am I?</span>
       </nuxt-link>
-      <nuxt-link to="/projects" title="My works" @click.native="hideSideMenu">
-        <span>What did I?</span>
-      </nuxt-link>
       <nuxt-link
         to="/services"
         title="Services and benefits"
         @click.native="hideSideMenu"
       >
         <span>What can I do?</span>
+      </nuxt-link>
+      <nuxt-link to="/projects" title="My works" @click.native="hideSideMenu">
+        <span>What did I?</span>
       </nuxt-link>
       <nuxt-link
         to="/blog"
