@@ -11,7 +11,7 @@
         <span>What can I do?</span>
       </nuxt-link>
       <nuxt-link to="/projects" title="My works">
-        <span>What did I?</span>
+        <span>What did I make?</span>
       </nuxt-link>
       <nuxt-link to="/blog" title="Notes about my work">
         <span>Tech blog</span>
