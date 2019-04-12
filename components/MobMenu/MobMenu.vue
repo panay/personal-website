@@ -19,7 +19,7 @@
       </nuxt-link>
       <nuxt-link
         to="/services"
-        title="Services and benefits"
+        title="Services and skills"
         @click.native="hideSideMenu"
       >
         <span>What can I do?</span>

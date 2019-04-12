@@ -6,7 +6,7 @@
     </h1>
     <div class="skillboxes">
       <div class="skillbox">
-        <h2>Current experience</h2>
+        <h2 class="skillbox__title">Current experience</h2>
         <div class="skillbox-list">
           <div class="skillbox-list__item">
             <h3>HTML5 / Pug</h3>
@@ -48,11 +48,11 @@
         </div>
       </div>
       <div class="skillbox">
-        <h2>Past experience</h2>
+        <h2 class="skillbox__title">Past experience</h2>
         <div class="skillbox-list">
           <div class="skillbox-list__item">
-            <h3>.NET, C#, Razor</h3>
-            <p>Worked within .NET ecosystem</p>
+            <h3>.NET, Razor</h3>
+            <p>Worked within .NET ecosystem for about 2 years</p>
           </div>
           <div class="skillbox-list__item">
             <h3>Backbone / MarionetteJS / CoffeeScript</h3>
@@ -79,7 +79,7 @@
 export default {
   head() {
     return {
-      title: 'Services and benefits — Sergey Panay'
+      title: 'Services and skills — Sergey Panay'
     }
   }
 }
@@ -95,12 +95,36 @@ export default {
   margin-right: -10px;
 
   .skillbox {
-    flex: 1 0 50%;
-    max-width: 50%;
+    flex: 1 0 510px;
+    max-width: 510px;
     width: 100%;
-    padding: 20px;
     margin: 10px;
     border: 1px solid darken($c-bg, 15%);
+
+    &__title {
+      padding: 20px;
+      display: inline-block;
+      vertical-align: baseline;
+      position: relative;
+      margin: -1px 0 0 -1px;
+      background-color: $c-primary;
+    }
+
+    .skillbox-list {
+      padding: 20px;
+
+      &__item {
+        h3 {
+          margin-bottom: 0;
+        }
+
+        p {
+          margin-top: 8px;
+          line-height: 1.5;
+          color: darken($c-bg, 20%);
+        }
+      }
+    }
   }
 }
 </style>
