@@ -87,6 +87,7 @@ export default {
 
 <style lang="scss" scope>
 @import '~assets/styles/vars';
+@import '~assets/styles/mq';
 
 .skillboxes {
   display: flex;
@@ -124,6 +125,14 @@ export default {
           color: darken($c-bg, 20%);
         }
       }
+    }
+  }
+
+  @include mq($until: tablet) {
+    display: block;
+    margin: 0;
+    .skillbox {
+      margin: 20px 0;
     }
   }
 }
