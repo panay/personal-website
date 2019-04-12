@@ -36,6 +36,7 @@ export default {
   &__headings {
     h1 {
       font-size: rem(110);
+      margin-bottom: 20px;
     }
     h2 {
       font-size: rem(48);

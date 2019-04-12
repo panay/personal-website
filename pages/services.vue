@@ -1,8 +1,7 @@
 <template>
   <section class="container">
     <h1>
-      I offer front-end development for your projects and ready to join your
-      team.
+      Front-end development, team leadership, work in&nbsp;a&nbsp;team.
     </h1>
     <div class="skillboxes">
       <div class="skillbox">
@@ -59,6 +58,10 @@
             <p>Made a few projects with this stack</p>
           </div>
           <div class="skillbox-list__item">
+            <h3>jQuery</h3>
+            <p>Made plugins from scratch</p>
+          </div>
+          <div class="skillbox-list__item">
             <h3>PHP, C#, Ruby</h3>
             <p>
               I understand how backend works and I can do tasks a little bit
@@ -79,7 +82,7 @@
 export default {
   head() {
     return {
-      title: 'Services and skills — Sergey Panay'
+      title: 'Services — Sergey Panay'
     }
   }
 }
@@ -100,7 +103,8 @@ export default {
     max-width: 510px;
     width: 100%;
     margin: 10px;
-    border: 1px solid darken($c-bg, 15%);
+    border-left: 1px solid $c-primary;
+    // border: 1px solid darken($c-bg, 15%);
 
     &__title {
       padding: 20px;
@@ -115,6 +119,17 @@ export default {
       padding: 20px;
 
       &__item {
+        position: relative;
+        &:before {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background-color: $c-primary;
+          border-radius: 50%;
+          position: absolute;
+          left: -26px;
+          top: 7.5px;
+        }
         h3 {
           margin-bottom: 0;
         }

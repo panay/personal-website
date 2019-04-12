@@ -56,6 +56,8 @@ export default {
     width: 100%;
     padding: 20px;
     position: relative;
+    box-shadow: 0 3px 5px -1px rgba(#000, 0.2), 0 6px 10px 0 rgba(#000, 0.14),
+      0 1px 18px 0 rgba(#000, 0.12);
 
     &__heading {
       margin-bottom: 30px;
@@ -67,12 +69,12 @@ export default {
 
     &__close-btn {
       position: absolute;
-      top: 10%;
-      right: 10px;
+      top: 12px;
+      right: 12px;
       cursor: pointer;
       > svg {
         fill: darken($c-bg, 15%);
-        transition: fill 0.25s ease-in-out;
+        transition: color 0.25s ease-in-out;
         will-change: opacity;
       }
       &:hover,
