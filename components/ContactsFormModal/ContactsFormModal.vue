@@ -1,5 +1,5 @@
 <template>
-  <div v-if="opened" class="modal-wrapper">
+  <div class="modal-wrapper" :class="{ opened: opened }">
     <div class="modal">
       <h3 class="modal__heading">Choose a convenient way to contact me</h3>
       <Socials class="modal__socials" />
@@ -49,6 +49,14 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease-in-out;
+  will-change: opacity;
+  &.opened {
+    opacity: 1;
+    visibility: visible;
+  }
 
   .modal {
     background: $c-bg;

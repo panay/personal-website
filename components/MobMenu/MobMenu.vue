@@ -17,13 +17,6 @@
       >
         <span>Who am I?</span>
       </nuxt-link>
-      <nuxt-link
-        to="/services"
-        title="Services and skills"
-        @click.native="hideSideMenu"
-      >
-        <span>What can I do?</span>
-      </nuxt-link>
       <nuxt-link to="/projects" title="My works" @click.native="hideSideMenu">
         <span>What did I make?</span>
       </nuxt-link>
@@ -65,12 +58,6 @@ export default {
   display: none;
   @include mq($until: tablet) {
     display: block;
-    // position: fixed;
-    // top: 0;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // background-color: rgba($c-bg, 0.95);
 
     .mobile-menu-button {
       position: fixed;

@@ -3,7 +3,10 @@
     <Header />
     <section class="mainpage__headings">
       <h1>Sergey Panay</h1>
-      <h2>front-end developer</h2>
+      <h2>
+        front-end development, team&nbsp;leadership,
+        work&nbsp;in&nbsp;a&nbsp;team.
+      </h2>
       <socials />
     </section>
   </div>
@@ -34,11 +37,16 @@ export default {
   text-align: center;
 
   &__headings {
+    padding: 0 20px;
     h1 {
       font-size: rem(110);
       margin-bottom: 20px;
     }
     h2 {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 95%;
+      width: 100%;
       font-size: rem(48);
     }
   }
@@ -50,6 +58,7 @@ export default {
         font-size: rem(80);
       }
       h2 {
+        max-width: 100%;
         font-size: rem(28);
       }
     }

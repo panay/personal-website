@@ -1,7 +1,18 @@
 <template>
   <section class="container">
     <h1>My works</h1>
-    <p>In process...</p>
+    <div class="projects">
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+      <div class="projects__item"></div>
+    </div>
   </section>
 </template>
 
@@ -17,4 +28,7 @@ export default {
 
 <style lang="scss" scope>
 @import '~assets/styles/vars';
+
+.projects {
+}
 </style>

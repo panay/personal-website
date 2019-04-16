@@ -7,9 +7,6 @@
       <nuxt-link to="/about" title="Information about me">
         <span>Who am I?</span>
       </nuxt-link>
-      <nuxt-link to="/services" title="Services and skills">
-        <span>What can I do?</span>
-      </nuxt-link>
       <nuxt-link to="/projects" title="My works">
         <span>What did I make?</span>
       </nuxt-link>
