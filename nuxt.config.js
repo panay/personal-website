@@ -45,7 +45,7 @@ export default {
    ** Global CSS
    */
   css: ['@/assets/styles/_normalize.scss', '@/assets/styles/main.scss'],
-
+  layoutTransition: 'mainpage',
   /*
    ** Plugins to load before mounting the App
    */

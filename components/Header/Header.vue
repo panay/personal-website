@@ -1,7 +1,9 @@
 <template>
   <header :class="{ inner: innerPage }">
     <div v-if="innerPage" class="inner-logo">
-      <nuxt-link to="/" title="Return to homepage">Sergey Panay</nuxt-link>
+      <nuxt-link to="/" title="Return to homepage">
+        S<span class="inner-logo__icon">/</span>P</nuxt-link
+      >
     </div>
     <nav>
       <nuxt-link to="/about" title="Information about me">
@@ -85,7 +87,17 @@ header {
         color: $c-default;
         &:hover {
           color: $c-primary;
+
+          .inner-logo__icon {
+            color: $c-default;
+          }
         }
+      }
+
+      &__icon {
+        color: $c-primary;
+        transition: color 0.25s ease-in-out;
+        will-change: opacity;
       }
     }
   }
