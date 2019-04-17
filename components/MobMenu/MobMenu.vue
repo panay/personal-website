@@ -61,9 +61,9 @@ export default {
 
     .mobile-menu-button {
       position: fixed;
-      bottom: 20px;
+      bottom: 100px;
       right: 20px;
-      z-index: 100;
+      z-index: 999;
       background-color: $c-primary;
       width: 56px;
       height: 56px;
