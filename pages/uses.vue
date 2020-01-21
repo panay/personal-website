@@ -51,7 +51,7 @@
             title="Visual Studio Code"
             >VS Code</a
           >
-          for develop pet-projects, study new things
+          for development pet-projects, studying new things
         </li>
         <li>Terminal on Mac</li>
         <li>
@@ -85,6 +85,26 @@
             >Browserstack.com</a
           >
           for testing my work in several browsers
+        </li>
+        <li>
+          <a
+            href="https://www.getpostman.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            title="Get Postman"
+            >Postman</a
+          >
+          for testing APIs, creating mock-servers
+        </li>
+        <li>
+          <a
+            href="https://www.netlify.com/"
+            target="_blank"
+            rel="nofollow noopener"
+            title="Netlify"
+            >Netlify</a
+          >
+          for deployment my own projects(like this website)
         </li>
       </ul>
       <h2>Productivity</h2>
