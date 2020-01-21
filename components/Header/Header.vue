@@ -9,12 +9,6 @@
       <nuxt-link to="/about" title="Information about me">
         <span>Who am I?</span>
       </nuxt-link>
-      <nuxt-link to="/projects" title="My works">
-        <span>What did I make?</span>
-      </nuxt-link>
-      <nuxt-link to="/blog" title="Notes about my work">
-        <span>Tech blog</span>
-      </nuxt-link>
     </nav>
   </header>
 </template>

@@ -17,16 +17,6 @@
       >
         <span>Who am I?</span>
       </nuxt-link>
-      <nuxt-link to="/projects" title="My works" @click.native="hideSideMenu">
-        <span>What did I make?</span>
-      </nuxt-link>
-      <nuxt-link
-        to="/blog"
-        title="Notes about my work"
-        @click.native="hideSideMenu"
-      >
-        <span>Tech blog</span>
-      </nuxt-link>
     </nav>
   </div>
 </template>
